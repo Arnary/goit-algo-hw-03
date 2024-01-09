@@ -1,5 +1,6 @@
 import turtle
 
+
 def koch_snowflake(t, order, size):
     if order == 0:
         t.forward(size)
@@ -7,6 +8,7 @@ def koch_snowflake(t, order, size):
         for angle in [60, -120, 60, 0]:
             koch_snowflake(t, order - 1, size / 3)
             t.left(angle)
+
 
 def draw_koch_snowflake(order, size=600):
     window = turtle.Screen()
